@@ -72,7 +72,7 @@ A complete Merkle Tree (full binary tree) requires 2^n leaf node data, but the a
 
 Then the padding node hash4 = hash3, stored balances are `{"BTC": 0, "ETH": 0,"USDT": 0}`，as shown in the highlighted node in Figure one：
 Figure one
-<img src="images/flowChart.jpg" alt="" style="text-align:right;width:500px;"/>
+<img src="images/flowChart.jpg" alt="" style="text-align:right;width:500;"/>
 
 ```
 Parent node's hash = sha256Function(hash1+hash2,{"BTC":(hash1(BTC amount)+hash2(BTC amount)),"ETH":(hash1(ETH amount)+hash2(ETH amount)),"USDT":(hash1(USDT amount)+hash2(USDT amount))},parent node level).substring(0,16)
